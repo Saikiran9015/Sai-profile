@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abbu Saikiran | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0a0f2c, #1a237e);
+      color: #ffffff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: right;
+      gap: 40px;
+      padding: 20px 60px;
+      background-color: rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffc107;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #ffc107;
+      object-fit: cover;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    h1 {
+      font-size: 2.6em;
+      margin-top: 20px;
+    }
+
+    h3 {
+      color: #ffc107;
+      font-size: 1.4em;
+      margin-bottom: 20px;
+    }
+
+    .btns a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 25px;
+      border: 2px solid #ffc107;
+      border-radius: 8px;
+      color: #ffc107;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btns a:hover {
+      background-color: #ffc107;
+      color: #0a0f2c;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    h2 {
+      color: #ffc107;
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ffc107;
+      display: inline-block;
+    }
+
+    .skills, .projects, .experience, .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 220px;
+    }
+
+    .card h4 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      background-color: #0a0f2c;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="Sai pic.jpg" alt="Abbu Saikiran" class="profile-img">
+    <h1>Abbu Saikiran</h1>
+    <h3>Full-Stack Developer | AI Cybersecurity Enthusiast</h3>
+    <div class="btns">
+      <a href="#projects">View Projects</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am currently pursuing a B.Tech in Computer Science with a specialization in Data Science. Passionate about full-stack development, AI, and building secure systems. I love turning complex problems into smart, simple solutions and am looking for opportunities to grow and contribute as a developer.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><h4>Languages</h4><p>Python, SQL</p></div>
+      <div class="card"><h4>Tools</h4><p>Power BI, Tableau, Excel</p></div>
+      <div class="card"><h4>Frameworks</h4><p>Pandas, NumPy, Scikit-Learn</p></div>
+      <div class="card"><h4>Platforms</h4><p>Jupyter, VS Code</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h4><a href="#" style="color: yellow;text-decoration: none;">Cyber.AI – Digital Security System</a></h4>
+        <p>AI-based system with 94% intrusion detection accuracy. Real-time dashboard with access control and alerts.</p>
+      </div>
+      <div class="card">
+        <h4><a href="#"style="color: yellow;text-decoration: none;">LLM Chatbot</a></h4>
+        <p>Offline chatbot using Ollama for multi-turn conversation. Context-aware logic and secure sessions.</p>
+      </div>
+      <div class="card">
+        <h4><a href="#"style="color: yellow;text-decoration: none;">Smart Inventory System</a></h4>
+        <p>ML-based forecasting tool with 89% accuracy, automation for procurement, and insightful dashboard.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <div class="card">
+        <h4>Developer at LINK (Jan 2025 – Present)</h4>
+        <ul>
+          <li>Built secure AI-based system for malware detection and intrusion prevention</li>
+          <li>Developed cross-platform UI with Flutter</li>
+          <li>Managed backend integration with PostgreSQL and MongoDB</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <div class="card">
+        <h4>Email</h4>
+        <p><a href="mailto:abbusaikiran1@gmail.com" style="color: #ffc107;">abbusaikiran1@gmail.com</a></p>
+      </div>
+      <div class="card">
+        <h4>LinkedIn</h4>
+        <p><a href="https://www.linkedin.com/in/abbusaikiran/" style="color: #ffc107;">abbusaikiran</a></p>
+      </div>
+      <div class="card">
+        <h4>GitHub</h4>
+        <p><a href="https://github.com/Saikiran9015" style="color: #ffc107;">Saikiran9015</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Abbu Saikiran. All rights reserved.
+  </footer>
+
+</body>
+</html>
